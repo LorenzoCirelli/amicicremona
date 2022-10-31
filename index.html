@@ -4,26 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trova amici cr</title>
-    <link rel="stylesheet" href="librerie/piastrella.css">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="takequiz/librerie/piastrella.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="style/layout.css">
+                    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 <body>
-    <div piastrella="container column" data-aos="zoom-in" class="giga">
-        <div piastrella="linear column" class="centra">
-            <div><h2>Rispondi</h2></div>
-            <div id="avanza" class="avanzamento"></div>
-            <h1 id="domanda1">ERROR A1</h1>
-            <div class="designquiz" piastrella="linear column" id="rispo">
-            
+    <div piastrella="container column" class="contenitore">
+        <div piastrella="linear row" class="mobchange">
+            <div piastrella="block 1" class="welcome">
+                <h1>AMICI CREMONA</h1>
+                <a href="#tipi"><button class="btn">SCOPRI DI PIÚ <i class="bi-app-indicator"></i></button></a>
+            </div>
+            <div piastrella="block 1" class="flexing" data-aos="zoom-in">
+                <div class="quiz" piastrelladesign="minimal white">
+                    <h1>QUIZ</h1>
+                    <h3>Rispondi al quiz per conoscere nuova gente</h3>
+                    <a href="takequiz/index.html"><button class="bottone">INIZIAMO <i class="bi-arrow-right-circle"></i></button></a>
+                </div>
             </div>
         </div>
+        <div piastrella="linear row" class="mobchange">
+            <a id="tipi"></a>
+            <div piastrella="block 1" class="flexing" data-aos="zoom-in">
+                <h1>ECCO COSA PUOI FARE</h1>
+                <h2>Tramite questa piattaforma puoi trovare: 
+                    <ul type="circle" class="larger">
+                        <li>amici 👋</li>
+                        <li>amore ❤️</li>
+                        <li>gruppi studio 📚</li>
+                    </ul>
+                </h2>
+            </div> 
+        </div>
     </div>
-    <script src="quiz/quiz.js"></script>
     <script>
-        AOS.init();
-    </script>
+  AOS.init();
+</script>
 </body>
 </html>
