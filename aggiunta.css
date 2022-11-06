@@ -1,6 +1,4 @@
-body{
-   
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 #dire{
     display: flex;
     flex-direction: row;
@@ -8,6 +6,10 @@ body{
 @media only screen and (max-width: 600px) {
     #dire{
     display: flex;
+    flex-direction: column;
+}
+#mob2{
+      display: flex;
     flex-direction: column;
 }
 }
